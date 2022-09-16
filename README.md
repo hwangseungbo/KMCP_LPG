@@ -9,7 +9,7 @@ LPG엔진 계기판
 
 <br />
 
-### ScreenShot
+### GIF Image
 -----
 <p align="center"><img src="/img/1.gif" width="250"></p>
 
