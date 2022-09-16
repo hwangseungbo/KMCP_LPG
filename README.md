@@ -11,11 +11,11 @@ LPG엔진 계기판
 
 ### ScreenShot
 -----
-<p align="center"><img src="/img/1.jpg" width="500"></p>
+<p align="center"><img src="/img/1.JPG" width="600"></p>
 
 <br />
 
 ### GIF Image
 -----
-<p align="center"><img src="/img/1.gif" width="500"></p>
+<p align="center"><img src="/img/1.gif" width="600"></p>
 
