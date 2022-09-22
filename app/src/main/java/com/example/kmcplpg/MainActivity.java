@@ -249,11 +249,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
                                         if (ecuSubData.equals("ff")) {
                                             ecuSubData = "?";
+                                            progressBar_CoolantTemp.setProgress(0);
                                         } else {
                                             ecuSubData = String.valueOf(temp);
+                                            progressBar_CoolantTemp.setProgress(temp);
                                         }
 
-                                        progressBar_CoolantTemp.setProgress(temp);
                                         tv_CoolantTempValue.setText(ecuSubData + "ºF");
 
                                         //175   Oil Temp
