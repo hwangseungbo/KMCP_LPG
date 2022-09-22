@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                                             progressBar_RPM2.setProgress(0);
                                         }
 
-                                        if ((Rpm * 1000) >= 4000) {
+                                        if (Rpm >= 4000) {
                                             iv_RpmGradation.setImageResource(R.drawable.rpm_redzone);
                                         } else {
                                             iv_RpmGradation.setImageResource(R.drawable.rpm_normal);
@@ -264,11 +264,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                                         temp2 = temp2 - 273;
                                         if (ecuSubData.equals("ffff")) {
                                             ecuSubData = "?";
+                                            progressBar_OilTemp.setProgress(0);
                                         } else {
                                             ecuSubData = String.valueOf((int) temp2);
+                                            progressBar_OilTemp.setProgress((int) temp2);
                                         }
 
-                                        progressBar_OilTemp.setProgress((int) temp2);
                                         tv_OilTempValue.setText(ecuSubData + "ºF");
 
 
@@ -281,11 +282,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                                         temp = temp * 4;
                                         if (ecuSubData.equals("ff")) {
                                             ecuSubData = "?";
+                                            progressBar_OilPress.setProgress(0);
                                         } else {
                                             ecuSubData = String.valueOf(temp);
+                                            progressBar_OilPress.setProgress(temp);
                                         }
 
-                                        progressBar_OilPress.setProgress(temp);
                                         tv_OilPressValue.setText(ecuSubData + " PSI");
 
 
@@ -299,11 +301,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                                         temp = temp / 10;
                                         if (ecuSubData.equals("ff")) {
                                             ecuSubData = "?";
+                                            progressBar_Fuel.setProgress(0);
                                         } else {
                                             ecuSubData = String.valueOf(temp);
+                                            progressBar_Fuel.setProgress(temp);
                                         }
 
-                                        progressBar_Fuel.setProgress(temp);
                                         tv_FuelValue.setText(ecuSubData + "%");
 
                                     }
