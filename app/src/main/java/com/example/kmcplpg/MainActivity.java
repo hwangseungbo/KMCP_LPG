@@ -41,6 +41,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements LocationListener {
 
+    public static final int PERMISSION_ACCESS_FINE_LOCATION = 0x0000001;
     public static LocationManager locationManager;
     public static Location mLastlocation = null;
     public static double speed;
@@ -280,7 +281,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                                         //100   Oil Press
                                         ecuSubData = ecuData.substring(16, 18);
                                         int temp = Integer.parseInt(ecuSubData, 16);
-                                        temp = temp * 4;
+                                        temp = (temp * 4) * 145 / 1000;     // kPa => PSI 변환
                                         if (ecuSubData.equals("ff")) {
                                             ecuSubData = "?";
                                             progressBar_OilPress.setProgress(0);
@@ -822,6 +823,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             }
         }
     }
+
 
     @Override
     public void onBackPressed() {
