@@ -19,3 +19,7 @@ LPG엔진 계기판
 -----
 <p align="center"><img src="/img/1.gif" width="600"></p>
 
+<br />
+
+<p align="center"><img src="/img/2.gif" width="600"></p>
+
