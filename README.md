@@ -23,3 +23,14 @@ LPG엔진 계기판
 
 <p align="center"><img src="/img/2.gif" width="600"></p>
 
+<br />
+
+### 개발자 및 디자이너
+-----
+develop by 황승보<br />
+email : ghkdtmdqh@naver.com<br />
+hp : 010-6787-8433<br />
+<br />
+designed by 하일룡<br />
+email : dlffyd6576@naver.com<br />
+hp : 010-4710-6485
